@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Modules
+Clock Module
+Comman Module
+Icon Module
+Link Module
+Image Background Module
+Todos List Module
+Japan Module  (Hiragana Katakana Complete)
+Link Module
+Log Timesheet Module
+Search Module
+Setting Module
+Weather Module
+
+## Image demo
+Learn hiragana katakana
+![japan module](https://github.com/ngoalongtb/momentum/blob/master/image-demo/Screenshot%20from%202017-10-15%2016-34-53.png)
