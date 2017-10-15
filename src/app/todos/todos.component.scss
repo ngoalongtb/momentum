@@ -1,0 +1,94 @@
+$bg-item:rgba(15,15,15,.925);
+.todos{
+    width:800px;
+    height:calc(100% - 20px);
+    position:absolute;
+    margin:10px auto;
+    left:50%;
+    transform: translateX(-50%);
+    background:$bg-item;
+    border-radius: 5px;
+}
+
+.todos{
+    .todos-header{
+        border-radius: 5px;
+        height:10px;
+        background:black;
+        color:white;
+        position:relative;
+        padding:10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            cursor: pointer;
+        }
+    }
+
+
+    .todos-category{
+        border-bottom: 1px solid black; 
+        padding:10px;
+        ul{
+            list-style: none;
+
+            li{
+                margin-top:10px;
+                display: inline-block;
+                padding:8px 20px;
+                background:black;
+                color:white;
+                margin-left:5px;
+                border-radius: 10px;
+                cursor:pointer;
+            }
+            li.success{
+                background:lightgreen;
+                color:black;
+            }
+            li.fail{
+                background:red;
+                color:white;
+            }
+            li.warning{
+                background:orange;
+                color:black;
+            }
+        }
+    }
+
+    .todos-content{
+        display: flex;
+        color:white;
+
+        .todos-list{
+            flex:1;
+            ul{
+                list-style: none;
+
+                li{
+                    padding:10px 20px;
+                    span{
+                        margin-left:10px;
+                    }
+                    cursor:pointer;
+                    &:hover{
+                        background:rgba(255,255,255,0.05)
+                    }
+                }
+                li.success{
+                    span{
+                        text-decoration: line-through;
+                        color:grey;
+                    }
+                }
+            }
+        }
+        .todos-detail{
+            flex:2;
+        }
+    }
+}
+

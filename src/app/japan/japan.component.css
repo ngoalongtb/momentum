@@ -1,0 +1,83 @@
+.japan {
+  width: 800px;
+  height: calc(100% - 20px);
+  position: absolute;
+  margin: 10px auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 15, 15, 0.925);
+  border-radius: 5px;
+}
+
+.japan .japan-header {
+  border-radius: 5px;
+  height: 10px;
+  background: black;
+  color: white;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.japan .japan-header span {
+  cursor: pointer;
+}
+
+.japan .japan-content .japan-list {
+  height: 100px;
+  color: white;
+}
+
+.japan .japan-content .japan-list input {
+  margin-left: 50px;
+}
+
+.japan .japan-content .japan-center {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.japan .japan-content .japan-center span {
+  font-size: 150px;
+  color: white;
+}
+
+.japan .japan-content .japan-center input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 300px;
+  padding: 5px 20px;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.japan .japan-content .japan-center input:focus {
+  outline: none;
+}
+
+.japan .japan-content .japan-center .japan-help {
+  position: absolute;
+  top: 0;
+  right: 50px;
+  color: white;
+  font-size: 16px;
+}
+
+.japan .japan-content .japan-center .japan-hint {
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.japan .japan-content .japan-center .japan-hint * {
+  color: magenta;
+  font-size: 16px;
+}

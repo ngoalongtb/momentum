@@ -1,0 +1,96 @@
+.todos {
+  width: 800px;
+  height: calc(100% - 20px);
+  position: absolute;
+  margin: 10px auto;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(15, 15, 15, 0.925);
+  border-radius: 5px;
+}
+
+.todos .todos-header {
+  border-radius: 5px;
+  height: 10px;
+  background: black;
+  color: white;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todos .todos-header span {
+  cursor: pointer;
+}
+
+.todos .todos-category {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+
+.todos .todos-category ul {
+  list-style: none;
+}
+
+.todos .todos-category ul li {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  color: white;
+  margin-left: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todos .todos-category ul li.success {
+  background: lightgreen;
+  color: black;
+}
+
+.todos .todos-category ul li.fail {
+  background: red;
+  color: white;
+}
+
+.todos .todos-category ul li.warning {
+  background: orange;
+  color: black;
+}
+
+.todos .todos-content {
+  display: flex;
+  color: white;
+}
+
+.todos .todos-content .todos-list {
+  flex: 1;
+}
+
+.todos .todos-content .todos-list ul {
+  list-style: none;
+}
+
+.todos .todos-content .todos-list ul li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.todos .todos-content .todos-list ul li span {
+  margin-left: 10px;
+}
+
+.todos .todos-content .todos-list ul li:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.todos .todos-content .todos-list ul li.success span {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.todos .todos-content .todos-detail {
+  flex: 2;
+}

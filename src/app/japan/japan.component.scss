@@ -1,0 +1,86 @@
+$bg-item:rgba(15,15,15,.925);
+.japan{
+    width:800px;
+    height:calc(100% - 20px);
+    position:absolute;
+    margin:10px auto;
+    left:50%;
+    transform: translateX(-50%);
+    background:$bg-item;
+    border-radius: 5px;
+}
+
+.japan{
+    .japan-header{
+        border-radius: 5px;
+        height:10px;
+        background:black;
+        color:white;
+        position:relative;
+        padding:10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span{
+            cursor: pointer;
+        }
+    }
+    .japan-content{
+        .japan-list{
+            height:100px;
+            color:white;
+
+            input{
+                margin-left:50px;
+            }
+        }
+        .japan-center{
+            height:300px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+
+            span{
+                font-size: 150px;
+                color:white;
+            }
+            input{
+                background:none;
+                border:none;
+                border-bottom:1px solid white;
+                width:300px;
+                padding:5px 20px;
+                font-size: 40px;
+                text-align: center;
+                color:white;
+                margin-top:10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .japan-help{
+                position: absolute;
+                top:0;
+                right:50px;
+                color:white;
+                font-size: 16px;
+            }
+            .japan-hint{
+                position: absolute;
+                top:0;
+                left:50px;
+                
+                *{
+                    color:magenta;
+                    font-size: 16px;
+                }
+            }
+
+        }
+        .japan-footer{
+
+        }
+    }
+}

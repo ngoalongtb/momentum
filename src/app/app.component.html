@@ -1,0 +1,28 @@
+<div class="app">
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-left"></div>
+  <div class="bottom-right"></div>
+  <div class="center">
+      <app-clock></app-clock>
+  </div>
+  <div class="below-center">
+      <app-greeting></app-greeting>
+  </div>
+  <div class="over-bottom">
+
+  </div>
+  <div class="bottom-center">
+    <app-quotes></app-quotes>
+  </div>
+  <div class="bottom-left"></div>
+  <div class="bottom-right"></div>
+  
+</div>
+
+<div *ngIf="activeModule == 'todos'">
+  <app-todos [activeModule]="activeModule" (output)="changeActiveModule($event)"></app-todos>
+</div>
+<div *ngIf="activeModule == 'japan'">
+  <app-japan [activeModule]="activeModule" (output)="changeActiveModule($event)"></app-japan>
+</div>

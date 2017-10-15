@@ -1,0 +1,27 @@
+<div class="japan">
+  <div class="japan-header">
+    {{activeModule}}
+    <span (click)="close()">x</span>
+  </div>
+  <div class="japan-content">
+    <div class="japan-list">
+        <input type="checkbox" value="hiragana" [(checked)]="turnHiragana" (change)="turnHiragana = !turnHiragana"> hiragana <br>
+        <input type="checkbox" value="katakana" [(checked)]="turnKatakana" (change)="turnKatakana = !turnKatakana"> katakana <br>
+    </div>
+    <div class="japan-center">
+      <span>{{show}}</span>
+      <input  [(ngModel)]="romaji" (keyup)="onKey($event)">
+      <div class="japan-help">
+        {{help}}
+      </div>
+      <div class="japan-hint">
+        <span>type...</span><br>
+        <span>help: show romanji</span><br>
+        <span>next: next</span>
+      </div>
+    </div>
+    <div class="japan-footer">
+
+    </div>
+  </div>
+</div>

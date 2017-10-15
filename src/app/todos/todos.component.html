@@ -1,0 +1,38 @@
+<div class="todos">
+  <div class="todos-header">
+    Todos
+    <span (click)="close()">x</span>
+  </div>
+
+  <div class="todos-category">
+    <ul>
+      <li *ngFor="let category of categorys" [class]="category.status" (click)="showTodos(category.todos)">
+        {{category.name}}
+      </li>
+    </ul>
+  </div>
+
+  <div class="todos-content">
+    <div class="todos-list">
+      <ul>
+        <li *ngFor="let todo of todos" [class]="todo.status" (click)="showDetail(todo)">
+          <input type="checkbox" name="" value="" [checked]="todo.status == 'success'">
+          <span>{{todo.name}}</span>
+        </li>
+      </ul>
+    </div>
+    <div class="todos-detail">
+      {{todo.name}}
+      <br>
+      {{todo.status}}
+      <br>
+      {{todo.startDate}}
+      <br>
+      {{todo.endDate}}
+      <br>
+      {{todo.description}}
+      <br>
+      {{todo.priority}}
+    </div>
+  </div>
+</div>
