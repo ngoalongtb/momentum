@@ -27,18 +27,18 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## Modules
-Clock Module
-Comman Module
-Icon Module
-Link Module
-Image Background Module
-Todos List Module
-Japan Module  (Hiragana Katakana Complete)
-Link Module
-Log Timesheet Module
-Search Module
-Setting Module
-Weather Module
++ Clock Module
++ Comman Module
++ Icon Module
++ Link Module
++ Image Background Module
++ Todos List Module
++ Japan Module  (Hiragana Katakana Complete)
++ Link Module
++ Log Timesheet Module
++ Search Module
++ Setting Module
++ Weather Module
 
 ## Image demo
 Learn hiragana katakana
